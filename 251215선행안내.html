@@ -26,7 +26,7 @@
             --accent-gold-light: #e6c88e; 
             --accent-gold-bg: #fffbf2;
             --text-dark: #333333;
-            --text-gray: #666666;
+            --text-gray: #555555;
             --bg-light: #f8f9fa;
             --white: #ffffff;
             --danger: #ef4444;
@@ -40,7 +40,7 @@
 
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            line-height: 1.6;
+            line-height: 1.75;
             color: var(--text-dark);
             background-color: var(--bg-light);
             word-break: keep-all;
@@ -52,7 +52,7 @@
 
         /* Layout Utilities */
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -108,15 +108,30 @@
 
         .sub-title {
             font-size: 1.1rem;
-            opacity: 0.8;
+            opacity: 0.9;
             font-weight: 300;
             position: relative;
             z-index: 1;
         }
 
+        /* Greeting Section (Letter) */
+        .greeting-section {
+            padding: 60px 0 30px;
+            background: var(--white);
+        }
+
+        .greeting-box {
+            background-color: #fff;
+            padding: 0 20px;
+            font-size: 1.05rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
         /* Intro Section */
         .intro-section {
-            padding: 60px 0;
+            padding: 40px 0 60px;
             background: var(--white);
         }
 
@@ -125,15 +140,16 @@
             text-align: center;
             margin-bottom: 40px;
             color: var(--primary-dark);
+            font-weight: 700;
         }
 
         .problem-card {
             background: var(--bg-light);
-            border-left: 4px solid var(--primary-dark);
-            padding: 30px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-dark);
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
         }
 
         .problem-header {
@@ -142,9 +158,14 @@
             gap: 15px;
             margin-bottom: 15px;
             color: var(--primary-dark);
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
             font-family: 'Noto Serif KR', serif;
+        }
+
+        .problem-card p {
+            color: var(--text-gray);
+            font-size: 1rem;
         }
 
         /* Core Philosophy Section (3 Layers) */
@@ -157,11 +178,20 @@
         .philosophy-title {
             color: var(--white);
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .philosophy-title span {
             color: var(--accent-gold);
+        }
+        
+        .philosophy-desc {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            text-align: center;
+            opacity: 0.9;
+            font-size: 1.05rem;
+            line-height: 1.8;
         }
 
         .layers-grid {
@@ -223,12 +253,20 @@
             padding: 80px 0;
             background: var(--white);
         }
+        
+        .comparison-intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            font-size: 1.05rem;
+            color: var(--text-gray);
+        }
 
         .roadmap-box {
             background: var(--bg-light);
             border-radius: 20px;
             padding: 40px;
-            margin-top: 40px;
+            margin-top: 20px;
             border: 1px solid #e2e8f0;
         }
 
@@ -236,7 +274,7 @@
         .roadmap-wrapper {
             margin-top: 50px;
             background: #fff;
-            padding: 20px;
+            padding: 30px 20px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             overflow: hidden;
@@ -255,11 +293,11 @@
             position: relative;
         }
 
-        /* ===== FIX: Chart Header Alignment ===== */
+        /* Chart Header Alignment */
         .chart-header {
             display: grid;
-            grid-template-columns: 100px 1fr; /* Same structure as .chart-row */
-            gap: 15px; /* Same gap as .chart-row */
+            grid-template-columns: 100px 1fr;
+            gap: 15px;
             align-items: center;
             text-align: center;
             font-weight: 700;
@@ -270,22 +308,20 @@
         }
 
         .header-label-space {
-            /* Empty placeholder for label column alignment */
             font-size: 0.9rem;
             color: #888;
         }
 
         .header-timeline {
             display: grid;
-            grid-template-columns: repeat(6, 1fr); /* 6 Grades */
-            gap: 5px; /* Match content gap */
+            grid-template-columns: repeat(6, 1fr);
+            gap: 5px;
         }
-        /* ======================================= */
 
         /* Chart Rows */
         .chart-row {
             display: grid;
-            grid-template-columns: 100px 1fr; /* Label + Timeline */
+            grid-template-columns: 100px 1fr;
             gap: 15px;
             align-items: stretch;
             margin-bottom: 15px;
@@ -306,7 +342,7 @@
 
         .chart-timeline {
             display: grid;
-            grid-template-columns: repeat(6, 1fr); /* Matching header */
+            grid-template-columns: repeat(6, 1fr);
             gap: 5px;
             background: #f1f5f9;
             border-radius: 8px;
@@ -332,11 +368,10 @@
             background-color: #e2e8f0;
             color: #64748b;
             border: 1px solid #cbd5e1;
-            margin-top: auto; margin-bottom: auto; /* Center vertically */
+            margin-top: auto; margin-bottom: auto;
             height: 60%;
         }
 
-        /* Math Era Stacked Blocks */
         .stack-cell {
             display: flex;
             flex-direction: column;
@@ -371,7 +406,6 @@
             font-style: italic;
         }
         
-        /* Legend */
         .legend {
             display: flex;
             justify-content: center;
@@ -382,8 +416,7 @@
         .legend-item { display: flex; align-items: center; gap: 6px; }
         .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 
-        /* End Custom Chart Styles */
-
+        /* Roadmap Flex (Visual Summary) */
         .roadmap-header {
             text-align: center;
             margin-bottom: 30px;
@@ -451,20 +484,27 @@
         }
 
         .quote {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-family: 'Noto Serif KR', serif;
             margin-bottom: 30px;
-            line-height: 1.5;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .closing-text {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+            font-size: 1.05rem;
         }
 
         .cta-box {
-            margin-top: 40px;
             display: inline-block;
             border: 1px solid var(--accent-gold);
-            padding: 15px 40px;
+            padding: 15px 50px;
             color: var(--accent-gold);
             font-weight: 600;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
         }
 
         /* Footer */
@@ -489,6 +529,8 @@
             .chart-row { grid-template-columns: 60px 1fr; } 
             .chart-label { font-size: 0.8rem; padding: 5px; }
             .header-label-space { font-size: 0.75rem; }
+            
+            .greeting-box { padding: 0 10px; font-size: 1rem; }
         }
     </style>
 </head>
@@ -502,14 +544,29 @@
                 고등 수학의 경쟁력,<br>
                 왜 <span class="text-gold">'전략적 선행'</span>이 필수일까요?
             </h1>
-            <p class="sub-title">현행만으로는 절대 채울 수 없는 '시간'과 '깊이'의 차이를 만듭니다.</p>
+            <p class="sub-title">"현행만으로는 절대 채울 수 없는 '시간'과 '깊이'의 차이를 만듭니다."</p>
         </div>
     </header>
 
-    <!-- Intro: The Problem -->
+    <!-- Greeting Section (New Added) -->
+    <section class="greeting-section">
+        <div class="container">
+            <div class="greeting-box text-center">
+                <p>
+                    안녕하십니까, <strong>수학의시대</strong>입니다.<br><br>
+                    변화하는 입시 제도와 날로 어려워지는 고등 수학 과정 앞에서, 
+                    우리 아이의 수학 학습 방향에 대해 고민이 많으실 줄로 압니다.<br>
+                    많은 학부모님께서 <em>"학교 진도만 충실히 따라가면 되지 않을까?"</em>라고 생각하시곤 합니다.<br>
+                    하지만 현장에서 아이들을 가르치며 느끼는 현실은 조금 다릅니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro: The Problem (Expanded) -->
     <section class="intro-section">
         <div class="container">
-            <h2 class="section-title">"현행만 따라가면 늦습니다."</h2>
+            <h2 class="section-title">1. 현행만으로는 부족합니다</h2>
             
             <div class="problem-card">
                 <div class="problem-header">
@@ -517,9 +574,11 @@
                     <span>물리적 시간의 절대적 부족</span>
                 </div>
                 <p>
-                    고등 수학은 중등 수학 대비 학습량이 <strong>3배 이상</strong> 많습니다. 
-                    현행 진도에만 급급하면 개념을 깊이 고민할 틈도 없이 시험 기간이 닥칩니다.
-                    결국 겉핥기식 학습으로 이어져 응용문제 앞에서 무너지는 '모래성'이 됩니다.
+                    고등 수학은 중등 수학에 비해 학습량이 <strong>3배 이상</strong> 많고, 내용은 훨씬 깊습니다. 
+                    '현행 학습'만 고집할 경우, 학교 진도를 쫓아가기에 급급해집니다. 
+                    개념을 배우고 익숙해지기도 전에 시험 기간이 닥치고, 
+                    심화 문제를 깊이 고민해 볼 시간 없이 겉핥기식으로 넘어가게 됩니다.
+                    결국 학년이 올라갈수록 구멍이 생기고, 응용문제 앞에서 무너지는 '모래성'과 같은 실력이 되고 맙니다.
                 </p>
             </div>
 
@@ -529,19 +588,28 @@
                     <span>생각할 여유의 상실</span>
                 </div>
                 <p>
-                    학교 수업 시간에 개념 이해에만 급급한 학생은 '킬러 문항'을 분석할 여유가 없습니다.
-                    미리 준비된 학생만이 출제 의도를 파악하고 심화 문제에 도전할 수 있습니다.
+                    이는 아이의 노력이 부족해서가 아니라, <strong>물리적인 학습 시간이 절대적으로 부족하기 때문</strong>입니다.
+                    학교 수업 시간에 개념을 이해하느라 에너지를 쏟는 학생은 
+                    선생님의 풀이 과정을 분석하고 출제 의도를 파악하는 여유를 가질 수 없습니다.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Core Philosophy: 3-Layered System -->
+    <!-- Core Philosophy: 3-Layered System (Expanded) -->
     <section class="philosophy-section">
         <div class="container">
             <div class="philosophy-title">
-                <h2>수학 실력을 완성하는<br><span class="text-gold">3겹의 단단한 갑옷 (3-Step System)</span></h2>
-                <p style="margin-top: 15px; opacity: 0.8;">수학의시대는 같은 내용을 난이도를 높여가며 세 번 완성합니다.</p>
+                <h2>2. 수학 실력을 완성하는<br><span class="text-gold">3겹의 단단한 갑옷</span></h2>
+            </div>
+            
+            <div class="philosophy-desc">
+                <p>
+                    저희 <strong>[수학의시대]</strong>가 추구하는 선행은 단순히 진도만 빨리 나가는 '수박 겉핥기'가 아닙니다.<br>
+                    저희는 <strong>[개념] → [심화] → [최상위]</strong>로 이어지는 <strong>'3단계 입체 학습'</strong>을 지향합니다.<br>
+                    같은 내용을 난이도를 높여가며 <strong>세 번 반복(3겹)</strong>해서 공부했을 때,<br>
+                    비로소 수학적 개념이 학생의 머릿속에 완벽히 체화됩니다.
+                </p>
             </div>
 
             <div class="layers-grid">
@@ -590,13 +658,18 @@
     <!-- Comparison / Roadmap Visual -->
     <section class="comparison-section">
         <div class="container">
-            <h2 class="section-title">학습 깊이의 차이</h2>
+            <h2 class="section-title">3. 앞서 나간 만큼, 다시 돌아봅니다</h2>
+            
+            <div class="comparison-intro">
+                <p>
+                    선행 학습의 진짜 목적은 '속도'가 아니라 <strong>'완성도'</strong>입니다.<br>
+                    미리 학습한 학생은 현행 심화 과정으로 끊임없이 복습하게 됩니다.<br>
+                    잊어버릴 만하면 다시 반복하고, 더 깊이 파고드는 구조적인 학습 시스템만이<br>
+                    고등 내신 1등급과 수능 고득점을 가능하게 합니다.
+                </p>
+            </div>
             
             <div class="roadmap-box">
-                <div class="roadmap-header">
-                    <p>선행 학습을 통해 확보된 여유는<br><strong>반복 학습</strong>과 <strong>심화 완성</strong>으로 이어집니다.</p>
-                </div>
-                
                 <div class="roadmap-flex">
                     <div class="roadmap-item">
                         <h4>일반적인 현행 학습</h4>
@@ -624,9 +697,9 @@
                     
                     <div class="roadmap-scroll">
                         <div class="roadmap-chart">
-                            <!-- Timeline Header: Aligned with rows now -->
+                            <!-- Timeline Header -->
                             <div class="chart-header">
-                                <div class="header-label-space">학년</div> <!-- Placeholder for alignment -->
+                                <div class="header-label-space">학년</div>
                                 <div class="header-timeline">
                                     <div>중1</div>
                                     <div>중2</div>
@@ -715,21 +788,12 @@
                         <div class="legend-item"><span class="dot" style="background: var(--accent-gold);"></span>현행 심화</div>
                         <div class="legend-item"><span class="dot" style="background: var(--primary-dark);"></span>최상위/완성</div>
                     </div>
-                    
-                    <p class="chart-caption">
-                        ※ 위 표는 학생의 학습 속도와 목표 대학에 따라 1:1 맞춤형 로드맵으로 재설계됩니다.<br>
-                        (오른쪽으로 스크롤하여 전체 과정을 확인하세요)
-                    </p>
                 </div>
-
-                <p class="text-center" style="margin-top: 30px; font-size: 0.9rem; color: #888;">
-                    * 앞서 나간 만큼 다시 돌아볼 수 있는 '복습의 기회'가 생깁니다.
-                </p>
             </div>
         </div>
     </section>
 
-    <!-- Conclusion -->
+    <!-- Conclusion (Updated) -->
     <section class="conclusion-section">
         <div class="container conclusion-content">
             <p class="quote">
@@ -737,12 +801,19 @@
                 <span style="color:var(--accent-gold); font-weight:700;">올바른 방법으로 충분한 시간을 투자한 아이</span>가<br>
                 승리하는 과목입니다."
             </p>
-            <p style="opacity: 0.9;">
-                무리한 진도 빼기가 아닙니다.<br>
-                아이가 소화할 수 있는 최적의 속도로 흔들리지 않는 실력을 만듭니다.
-            </p>
+            <div class="closing-text">
+                <p>
+                    저희 <strong>[수학의시대]</strong>는 무리한 진도 빼기보다는,<br>
+                    아이가 소화할 수 있는 최적의 속도로 <strong>[개념-심화-최상위]</strong>의 3단계 시스템을 통해<br>
+                    흔들리지 않는 수학 실력을 만들어내겠습니다.
+                </p>
+                <p style="margin-top: 20px;">
+                    아이들의 수학 경쟁력, <strong>수학의시대</strong>가 확실하게 책임지겠습니다.<br>
+                    감사합니다.
+                </p>
+            </div>
             <div class="cta-box">
-                수학의시대
+                수학의시대 올림
             </div>
         </div>
     </section>
