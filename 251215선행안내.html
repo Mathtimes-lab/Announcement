@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>수학의시대 - 학부모 안내문</title>
+    <title>수학의시대 - 2026 겨울방학 특강 안내</title>
 
-    <!-- SNS 공유용 Open Graph 메타 태그 (카카오톡 미리보기 설정) -->
+    <!-- SNS 공유용 Open Graph 메타 태그 -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="고등 수학의 경쟁력, 왜 '전략적 선행'이 필수일까요?">
-    <meta property="og:description" content="[수학의시대] 현행만으로는 절대 채울 수 없는 '시간'과 '깊이'의 차이를 만듭니다.">
+    <meta property="og:title" content="[수학의시대] 2026 겨울방학, 결정적 골든타임입니다.">
+    <meta property="og:description" content="개념·연산 집중 훈련부터 습관 관리까지. 귀중한 겨울방학을 가장 완벽하게 보내는 3단계 로드맵">
     <meta property="og:image" content="https://mathtimes-lab.github.io/Announcement/Announcement.jpg">
     <meta property="og:site_name" content="수학의시대">
 
@@ -98,7 +98,7 @@
         }
 
         .main-title {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             line-height: 1.3;
             margin-bottom: 20px;
             font-weight: 700;
@@ -116,7 +116,7 @@
 
         /* Greeting Section (Letter) */
         .greeting-section {
-            padding: 60px 0 30px;
+            padding: 50px 0 20px;
             background: var(--white);
         }
 
@@ -126,49 +126,10 @@
             font-size: 1.05rem;
             color: var(--text-gray);
             line-height: 1.8;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
-        /* Intro Section */
-        .intro-section {
-            padding: 40px 0 60px;
-            background: var(--white);
-        }
-
-        .section-title {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--primary-dark);
-            font-weight: 700;
-        }
-
-        .problem-card {
-            background: var(--bg-light);
-            border-left: 5px solid var(--primary-dark);
-            padding: 35px;
-            margin: 25px 0;
-            border-radius: 0 12px 12px 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-        }
-
-        .problem-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-            color: var(--primary-dark);
-            font-size: 1.3rem;
-            font-weight: 700;
-            font-family: 'Noto Serif KR', serif;
-        }
-
-        .problem-card p {
-            color: var(--text-gray);
-            font-size: 1rem;
-        }
-
-        /* Core Philosophy Section (3 Layers) */
+        /* Philosophy Section (3 Layers - Winter Break Focus) */
         .philosophy-section {
             padding: 80px 0;
             background-color: var(--primary-light);
@@ -178,7 +139,12 @@
         .philosophy-title {
             color: var(--white);
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
+        }
+
+        .philosophy-title h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
         }
 
         .philosophy-title span {
@@ -243,36 +209,58 @@
         }
 
         .layer-desc {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255,255,255,0.8);
             font-size: 0.95rem;
             line-height: 1.6;
+        }
+        
+        /* Highlight specific words in desc */
+        .layer-desc strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Habit Management Section (New) */
+        .habit-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+        
+        .habit-card {
+            background: var(--accent-gold-bg);
+            border: 2px solid var(--accent-gold);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .habit-icon {
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .habit-title {
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .habit-desc {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         /* Comparison Section */
         .comparison-section {
             padding: 80px 0;
-            background: var(--white);
-        }
-        
-        .comparison-intro {
-            max-width: 800px;
-            margin: 0 auto 40px;
-            text-align: center;
-            font-size: 1.05rem;
-            color: var(--text-gray);
+            background: #f1f5f9;
         }
 
-        .roadmap-box {
-            background: var(--bg-light);
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 20px;
-            border: 1px solid #e2e8f0;
-        }
-
-        /* CUSTOM ROADMAP CHART STYLES */
         .roadmap-wrapper {
-            margin-top: 50px;
             background: #fff;
             padding: 30px 20px;
             border-radius: 12px;
@@ -416,47 +404,6 @@
         .legend-item { display: flex; align-items: center; gap: 6px; }
         .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 
-        /* Roadmap Flex (Visual Summary) */
-        .roadmap-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .roadmap-flex {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .roadmap-item {
-            flex: 1;
-            min-width: 250px;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            position: relative;
-        }
-
-        .roadmap-item.highlight {
-            border: 2px solid var(--accent-gold);
-            transform: scale(1.05);
-            z-index: 2;
-        }
-
-        .roadmap-item h4 {
-            color: var(--primary-dark);
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-        
-        .roadmap-arrow {
-            color: var(--text-gray);
-        }
-
         /* Conclusion Section */
         .conclusion-section {
             padding: 80px 0;
@@ -505,6 +452,14 @@
             font-weight: 600;
             letter-spacing: 2px;
             font-size: 1.1rem;
+            background: rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .cta-box:hover {
+            background: var(--accent-gold);
+            color: #000;
         }
 
         /* Footer */
@@ -519,10 +474,9 @@
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .main-title { font-size: 1.8rem; }
-            .section-title { font-size: 1.6rem; }
+            .philosophy-title h2 { font-size: 1.6rem; }
             .layers-grid { grid-template-columns: 1fr; }
-            .roadmap-flex { flex-direction: column; }
-            .roadmap-arrow { transform: rotate(90deg); margin: 10px 0; }
+            .habit-title { font-size: 1.5rem; }
             
             /* Align Header Columns for Mobile */
             .chart-header { grid-template-columns: 60px 1fr; } 
@@ -541,253 +495,214 @@
         <div class="container">
             <div class="brand-name">수학의시대</div>
             <h1 class="main-title">
-                고등 수학의 경쟁력,<br>
-                왜 <span class="text-gold">'전략적 선행'</span>이 필수일까요?
+                2026년 겨울방학,<br>
+                <span class="text-gold">결정적 골든타임</span>입니다.
             </h1>
-            <p class="sub-title">"현행만으로는 절대 채울 수 없는 '시간'과 '깊이'의 차이를 만듭니다."</p>
+            <p class="sub-title">귀중한 방학, 가장 값어치 있게 보낼 수 있도록 준비했습니다.</p>
         </div>
     </header>
 
-    <!-- Greeting Section (New Added) -->
+    <!-- Greeting Section -->
     <section class="greeting-section">
         <div class="container">
             <div class="greeting-box text-center">
                 <p>
                     안녕하십니까, <strong>수학의시대</strong>입니다.<br><br>
-                    변화하는 입시 제도와 날로 어려워지는 고등 수학 과정 앞에서, 
-                    우리 아이의 수학 학습 방향에 대해 고민이 많으실 줄로 압니다.<br>
-                    많은 학부모님께서 <em>"학교 진도만 충실히 따라가면 되지 않을까?"</em>라고 생각하시곤 합니다.<br>
-                    하지만 현장에서 아이들을 가르치며 느끼는 현실은 조금 다릅니다.
+                    다가오는 2026년 겨울방학은 다음 학년의 성적을 결정짓는 가장 중요한 시기입니다.<br>
+                    누구에게나 주어지는 방학이지만, 누구나 똑같이 보내지는 않습니다.<br>
+                    <br>
+                    <strong>"이번 방학, 우리 아이의 수학은 어떻게 완성되어야 할까요?"</strong><br><br>
+                    수학의시대는 이번 겨울방학 특강을 통해<br>
+                    탄탄한 기본기부터 흔들리지 않는 습관까지 완벽하게 잡아드리겠습니다.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Intro: The Problem (Expanded) -->
-    <section class="intro-section">
-        <div class="container">
-            <h2 class="section-title">1. 현행만으로는 부족합니다</h2>
-            
-            <div class="problem-card">
-                <div class="problem-header">
-                    <i data-lucide="alert-triangle" color="#e11d48"></i>
-                    <span>물리적 시간의 절대적 부족</span>
-                </div>
-                <p>
-                    고등 수학은 중등 수학에 비해 학습량이 <strong>3배 이상</strong> 많고, 내용은 훨씬 깊습니다. 
-                    '현행 학습'만 고집할 경우, 학교 진도를 쫓아가기에 급급해집니다. 
-                    개념을 배우고 익숙해지기도 전에 시험 기간이 닥치고, 
-                    심화 문제를 깊이 고민해 볼 시간 없이 겉핥기식으로 넘어가게 됩니다.
-                    결국 학년이 올라갈수록 구멍이 생기고, 응용문제 앞에서 무너지는 '모래성'과 같은 실력이 되고 맙니다.
-                </p>
-            </div>
-
-            <div class="problem-card" style="border-left-color: #64748b;">
-                <div class="problem-header">
-                    <i data-lucide="search" color="#64748b"></i>
-                    <span>생각할 여유의 상실</span>
-                </div>
-                <p>
-                    이는 아이의 노력이 부족해서가 아니라, <strong>물리적인 학습 시간이 절대적으로 부족하기 때문</strong>입니다.
-                    학교 수업 시간에 개념을 이해하느라 에너지를 쏟는 학생은 
-                    선생님의 풀이 과정을 분석하고 출제 의도를 파악하는 여유를 가질 수 없습니다.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Philosophy: 3-Layered System (Expanded) -->
+    <!-- Core Philosophy: 3-Layered System (Winter Focused) -->
     <section class="philosophy-section">
         <div class="container">
             <div class="philosophy-title">
-                <h2>2. 수학 실력을 완성하는<br><span class="text-gold">3겹의 단단한 갑옷</span></h2>
-            </div>
-            
-            <div class="philosophy-desc">
-                <p>
-                    저희 <strong>[수학의시대]</strong>가 추구하는 선행은 단순히 진도만 빨리 나가는 '수박 겉핥기'가 아닙니다.<br>
-                    저희는 <strong>[개념] → [심화] → [최상위]</strong>로 이어지는 <strong>'3단계 입체 학습'</strong>을 지향합니다.<br>
-                    같은 내용을 난이도를 높여가며 <strong>세 번 반복(3겹)</strong>해서 공부했을 때,<br>
-                    비로소 수학적 개념이 학생의 머릿속에 완벽히 체화됩니다.
-                </p>
+                <h2>완벽한 수학을 위한<br><span class="text-gold">3겹의 학습 체계 (3-Step System)</span></h2>
+                <p style="font-size: 1rem; opacity: 0.8; margin-top: 10px;">겨울방학부터 내신까지, 빈틈없이 설계된 커리큘럼</p>
             </div>
 
             <div class="layers-grid">
-                <!-- Layer 1 -->
+                <!-- Layer 1: Winter Break -->
                 <div class="layer-card">
-                    <span class="layer-step">STEP 01</span>
+                    <span class="layer-step">STEP 01 (겨울방학 특강)</span>
                     <div class="icon-circle">
-                        <i data-lucide="book-open" size="32"></i>
+                        <i data-lucide="dumbbell" size="32"></i>
                     </div>
-                    <h3 class="layer-title">개념 (Concept)</h3>
+                    <h3 class="layer-title">극한의 기본기 트레이닝</h3>
                     <p class="layer-desc">
-                        1년 앞서 핵심 원리를 먼저 파악하여<br>
-                        전체적인 수학적 숲을 보는 단계
+                        <strong>[개념 + 공식 + 기본연산]</strong> 집중 훈련.<br>
+                        기초가 부실하면 응용은 불가능합니다.<br>
+                        방학 동안 개념의 뼈대를 확실하게 세우고,<br>
+                        연산 실수를 '0'으로 만듭니다.
                     </p>
                 </div>
 
-                <!-- Layer 2 -->
+                <!-- Layer 2: Regular Semester -->
                 <div class="layer-card">
-                    <span class="layer-step">STEP 02</span>
+                    <span class="layer-step">STEP 02 (정규 수업)</span>
                     <div class="icon-circle">
-                        <i data-lucide="layers" size="32"></i>
+                        <i data-lucide="git-merge" size="32"></i>
                     </div>
-                    <h3 class="layer-title">심화 (Deep Dive)</h3>
+                    <h3 class="layer-title">응용 심화 및 고등 연계</h3>
                     <p class="layer-desc">
-                        현행 직전, 배운 개념을 바탕으로<br>
-                        고난도 유형을 체화하며 응용력 배양
+                        탄탄해진 기본기 위에<br>
+                        <strong>고등학교까지 이어지는 내용</strong>을 접목합니다.<br>
+                        단순 암기가 아닌, 개념을 확장하고<br>
+                        문제 해결력을 기르는 심화 수업이 진행됩니다.
                     </p>
                 </div>
 
-                <!-- Layer 3 -->
+                <!-- Layer 3: Exam Prep -->
                 <div class="layer-card">
-                    <span class="layer-step">STEP 03</span>
+                    <span class="layer-step">STEP 03 (내신 대비)</span>
                     <div class="icon-circle">
-                        <i data-lucide="crown" size="32"></i>
+                        <i data-lucide="target" size="32"></i>
                     </div>
-                    <h3 class="layer-title">최상위 (Mastery)</h3>
+                    <h3 class="layer-title">최상위 킬러문항 정복</h3>
                     <p class="layer-desc">
-                        실전 내신 기간,<br>
-                        변별력을 가르는 킬러 문항 집중 공략
+                        시험 직전, 전체 복습과 함께<br>
+                        등급을 가르는 <strong>최상위 킬러 문항</strong>을 집중 공략합니다.<br>
+                        이미 2번의 반복(방학, 정규)을 거쳤기에<br>
+                        어려운 문제도 당황하지 않고 풀어냅니다.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Comparison / Roadmap Visual -->
-    <section class="comparison-section">
+    <!-- Habit Management Section (Added) -->
+    <section class="habit-section">
         <div class="container">
-            <h2 class="section-title">3. 앞서 나간 만큼, 다시 돌아봅니다</h2>
-            
-            <div class="comparison-intro">
-                <p>
-                    선행 학습의 진짜 목적은 '속도'가 아니라 <strong>'완성도'</strong>입니다.<br>
-                    미리 학습한 학생은 현행 심화 과정으로 끊임없이 복습하게 됩니다.<br>
-                    잊어버릴 만하면 다시 반복하고, 더 깊이 파고드는 구조적인 학습 시스템만이<br>
-                    고등 내신 1등급과 수능 고득점을 가능하게 합니다.
+            <h2 class="section-title text-center">"낮 시간이 성적을 바꿉니다"</h2>
+            <div class="habit-card">
+                <div class="habit-icon">
+                    <i data-lucide="sun" size="48"></i>
+                </div>
+                <h3 class="habit-title">방학 중 주간 학습 관리</h3>
+                <p class="habit-desc">
+                    늦잠과 스마트폰으로 흘려보내기 쉬운 방학의 낮 시간.<br>
+                    수학의시대는 <strong>오전부터 이어지는 타이트한 일정 관리</strong>를 통해<br>
+                    학생들이 쳐지지 않고 <strong>'공부하는 몸'</strong>을 만들도록 지도합니다.<br>
+                    <br>
+                    <span style="background: #e6c88e; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 0.95rem;">
+                        수업 + 자기주도학습 + 일일 테스트
+                    </span>의 루틴이 <br>
+                    방학이 끝난 후 놀라운 습관의 변화를 만듭니다.
                 </p>
             </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Visual -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">장기 학습 로드맵</h2>
+            <p class="text-center" style="margin-bottom: 40px; color: #666;">
+                이번 겨울방학은 단순한 선행이 아닌, <br><strong>고3까지 이어지는 큰 그림(Big Picture)</strong>의 첫 단추입니다.
+            </p>
             
-            <div class="roadmap-box">
-                <div class="roadmap-flex">
-                    <div class="roadmap-item">
-                        <h4>일반적인 현행 학습</h4>
-                        <p class="mb-2" style="font-size: 0.9rem; color:#666;">진도 나가기 급급함</p>
-                        <div style="background:#eee; padding:5px; margin-bottom:5px; border-radius:4px; font-size:0.8rem;">개념 학습 (허덕임)</div>
-                        <div style="background:#ffdada; padding:5px; border-radius:4px; font-size:0.8rem; color:#d63031;">심화/응용 시간 부족</div>
-                    </div>
+            <!-- Custom Roadmap Chart -->
+            <div class="roadmap-wrapper">
+                <h3 style="font-size: 1.2rem; margin-bottom: 20px; font-family: 'Noto Serif KR', serif; color: var(--primary-dark); text-align: center;">[ 학년별 3겹 누적 학습 흐름도 ]</h3>
+                
+                <div class="roadmap-scroll">
+                    <div class="roadmap-chart">
+                        <!-- Timeline Header -->
+                        <div class="chart-header">
+                            <div class="header-label-space">학년</div>
+                            <div class="header-timeline">
+                                <div>중1</div>
+                                <div>중2</div>
+                                <div>중3</div>
+                                <div>고1</div>
+                                <div>고2</div>
+                                <div>고3</div>
+                            </div>
+                        </div>
 
-                    <div class="roadmap-arrow">
-                        <i data-lucide="arrow-right" size="32"></i>
-                    </div>
-
-                    <div class="roadmap-item highlight">
-                        <h4 class="text-gold">[수학의시대] 전략적 선행</h4>
-                        <p class="mb-2" style="font-size: 0.9rem; color:#666;">3단계 누적 학습</p>
-                        <div style="background:#e3f2fd; padding:5px; margin-bottom:5px; border-radius:4px; font-size:0.8rem;">1차: 선행 개념</div>
-                        <div style="background:#e8eaf6; padding:5px; margin-bottom:5px; border-radius:4px; font-size:0.8rem;">2차: 현행 심화</div>
-                        <div style="background:#fff8e1; border:1px solid #ffd54f; padding:5px; border-radius:4px; font-size:0.8rem; font-weight:bold; color:#f57f17;">3차: 최상위/킬러</div>
-                    </div>
-                </div>
-
-                <!-- Custom Roadmap Chart -->
-                <div class="roadmap-wrapper">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 20px; font-family: 'Noto Serif KR', serif; color: var(--primary-dark); text-align: center;">[ 현행 vs 선행 학습 로드맵 구조 비교 ]</h3>
-                    
-                    <div class="roadmap-scroll">
-                        <div class="roadmap-chart">
-                            <!-- Timeline Header -->
-                            <div class="chart-header">
-                                <div class="header-label-space">학년</div>
-                                <div class="header-timeline">
-                                    <div>중1</div>
-                                    <div>중2</div>
-                                    <div>중3</div>
-                                    <div>고1</div>
-                                    <div>고2</div>
-                                    <div>고3</div>
+                        <!-- Row 1: 현행 -->
+                        <div class="chart-row">
+                            <div class="chart-label label-normal">
+                                일반<br>현행
+                            </div>
+                            <div class="chart-timeline">
+                                <div class="stack-cell">
+                                    <div class="block block-gray">중1 현행</div>
+                                </div>
+                                <div class="stack-cell">
+                                    <div class="block block-gray">중2 현행</div>
+                                </div>
+                                <div class="stack-cell">
+                                    <div class="block block-gray">중3 현행</div>
+                                </div>
+                                <div class="stack-cell">
+                                    <div class="block block-gray">공통수학</div>
+                                </div>
+                                <div class="stack-cell">
+                                    <div class="block block-gray">대수/미적1</div>
+                                </div>
+                                <div class="stack-cell">
+                                    <div class="block block-gray">확통/미적2</div>
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Row 1: 현행 -->
-                            <div class="chart-row">
-                                <div class="chart-label label-normal">
-                                    일반<br>현행
-                                </div>
-                                <div class="chart-timeline">
-                                    <div class="stack-cell">
-                                        <div class="block block-gray">중1 현행</div>
-                                    </div>
-                                    <div class="stack-cell">
-                                        <div class="block block-gray">중2 현행</div>
-                                    </div>
-                                    <div class="stack-cell">
-                                        <div class="block block-gray">중3 현행</div>
-                                    </div>
-                                    <div class="stack-cell">
-                                        <div class="block block-gray">공통수학</div>
-                                    </div>
-                                    <div class="stack-cell">
-                                        <div class="block block-gray">대수/미적1</div>
-                                    </div>
-                                    <div class="stack-cell">
-                                        <div class="block block-gray">확통/미적2</div>
-                                    </div>
-                                </div>
+                        <!-- Row 2: 수학의시대 -->
+                        <div class="chart-row">
+                            <div class="chart-label label-mathera">
+                                수학의<br>시대
                             </div>
-
-                            <!-- Row 2: 수학의시대 -->
-                            <div class="chart-row">
-                                <div class="chart-label label-mathera">
-                                    수학의<br>시대
+                            <div class="chart-timeline">
+                                <!-- 중1 -->
+                                <div class="stack-cell">
+                                    <div class="block block-concept">중2 개념</div>
+                                    <div class="block block-deep">중1 심화</div>
                                 </div>
-                                <div class="chart-timeline">
-                                    <!-- 중1 -->
-                                    <div class="stack-cell">
-                                        <div class="block block-concept">중2 개념</div>
-                                        <div class="block block-deep">중1 심화</div>
-                                    </div>
-                                    <!-- 중2 -->
-                                    <div class="stack-cell">
-                                        <div class="block block-concept">중3 개념</div>
-                                        <div class="block block-deep">중2 심화</div>
-                                    </div>
-                                    <!-- 중3 -->
-                                    <div class="stack-cell">
-                                        <div class="block block-concept">공통수학1</div>
-                                        <div class="block block-deep">중3 심화</div>
-                                        <div class="block block-master">고등 준비</div>
-                                    </div>
-                                    <!-- 고1 -->
-                                    <div class="stack-cell">
-                                        <div class="block block-concept">대수 개념</div>
-                                        <div class="block block-deep">공통수학</div>
-                                        <div class="block block-master">최상위</div>
-                                    </div>
-                                    <!-- 고2 -->
-                                    <div class="stack-cell">
-                                        <div class="block block-concept">미적2/기하</div>
-                                        <div class="block block-deep">대수/미적1</div>
-                                        <div class="block block-master">수능기초</div>
-                                    </div>
-                                    <!-- 고3 -->
-                                    <div class="stack-cell">
-                                        <div class="block block-concept">Final</div>
-                                        <div class="block block-deep">N제/기출</div>
-                                        <div class="block block-master">실전모의</div>
-                                    </div>
+                                <!-- 중2 -->
+                                <div class="stack-cell">
+                                    <div class="block block-concept">중3 개념</div>
+                                    <div class="block block-deep">중2 심화</div>
+                                </div>
+                                <!-- 중3 -->
+                                <div class="stack-cell">
+                                    <div class="block block-concept">공통수학1</div>
+                                    <div class="block block-deep">중3 심화</div>
+                                    <div class="block block-master">고등 준비</div>
+                                </div>
+                                <!-- 고1 -->
+                                <div class="stack-cell">
+                                    <div class="block block-concept">대수 개념</div>
+                                    <div class="block block-deep">공통수학</div>
+                                    <div class="block block-master">최상위</div>
+                                </div>
+                                <!-- 고2 -->
+                                <div class="stack-cell">
+                                    <div class="block block-concept">미적2/기하</div>
+                                    <div class="block block-deep">대수/미적1</div>
+                                    <div class="block block-master">수능기초</div>
+                                </div>
+                                <!-- 고3 -->
+                                <div class="stack-cell">
+                                    <div class="block block-concept">Final</div>
+                                    <div class="block block-deep">N제/기출</div>
+                                    <div class="block block-master">실전모의</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Legend -->
-                    <div class="legend">
-                        <div class="legend-item"><span class="dot" style="background: var(--accent-gold-bg); border: 1px solid var(--accent-gold);"></span>선행 개념</div>
-                        <div class="legend-item"><span class="dot" style="background: var(--accent-gold);"></span>현행 심화</div>
-                        <div class="legend-item"><span class="dot" style="background: var(--primary-dark);"></span>최상위/완성</div>
-                    </div>
+                <!-- Legend -->
+                <div class="legend">
+                    <div class="legend-item"><span class="dot" style="background: var(--accent-gold-bg); border: 1px solid var(--accent-gold);"></span>선행 개념</div>
+                    <div class="legend-item"><span class="dot" style="background: var(--accent-gold);"></span>현행 심화</div>
+                    <div class="legend-item"><span class="dot" style="background: var(--primary-dark);"></span>최상위/완성</div>
                 </div>
             </div>
         </div>
@@ -797,23 +712,20 @@
     <section class="conclusion-section">
         <div class="container conclusion-content">
             <p class="quote">
-                "수학은 머리가 좋은 아이가 아니라,<br>
-                <span style="color:var(--accent-gold); font-weight:700;">올바른 방법으로 충분한 시간을 투자한 아이</span>가<br>
-                승리하는 과목입니다."
+                "방학은 다음 학기 성적표를 미리 쓰는 시간입니다."
             </p>
             <div class="closing-text">
                 <p>
-                    저희 <strong>[수학의시대]</strong>는 무리한 진도 빼기보다는,<br>
-                    아이가 소화할 수 있는 최적의 속도로 <strong>[개념-심화-최상위]</strong>의 3단계 시스템을 통해<br>
-                    흔들리지 않는 수학 실력을 만들어내겠습니다.
+                    저희 <strong>[수학의시대]</strong>는 학생들의 귀중한 방학 시간이<br>
+                    단 1분도 허투루 쓰이지 않도록,<br>
+                    <strong>가장 밀도 높고 값어치 있는 시간</strong>으로 채워드리겠습니다.
                 </p>
-                <p style="margin-top: 20px;">
-                    아이들의 수학 경쟁력, <strong>수학의시대</strong>가 확실하게 책임지겠습니다.<br>
-                    감사합니다.
+                <p style="margin-top: 20px; font-size: 0.95rem; opacity: 0.8;">
+                    후회 없는 겨울방학, 수학의시대가 책임지겠습니다.
                 </p>
             </div>
             <div class="cta-box">
-                수학의시대 올림
+                2026 겨울방학 특강 등록 문의
             </div>
         </div>
     </section>
